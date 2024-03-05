@@ -1,0 +1,214 @@
+body{/*estilo del cuerpo de la pagina web*/
+    margin: 0; /* Elimina cualquier margen por defecto del elemento body. */
+    font-family: "Dancing Script", cursive;/*se agrega la fuente de la letra de google fonts*/
+    font-optical-sizing: auto;/*establece la presentacion del texto(tamaño)*/
+    font-style:normal;/*coloca la letra normal (sin negritas)*/
+    /* agrega sombra al texto*/
+    text-shadow: 1px #ddd, 0 1px #ddd,1px 0 #ddd, 0 -1px #ddd;
+    text-align: center;/*texto alineado al centro*/
+
+}
+.main-menu{ /*barra de menu*/
+    list-style: none; /*elimina los estilos de lista por defecto */
+    margin-top: 0; /* margen superior*/
+    margin-bottom: 0; /*margen inferior*/
+    padding-left: 0; /*elimina el relleno izquierdo */
+    display: flex; /*utiliza flexbox para el diseño */
+    flex-direction: column; /*coloca elementos en una columna */
+    align-items: center; /*coloca los elementos horizontalmente */
+    justify-content: center; /* centra los elementos verticalmente */
+    background-color: rgb(0, 0, 0); /*color de fondo de la barra de menu */
+    height: 0; /*altura*/
+    position: fixed; /*elemento fijo */
+    overflow: hidden; /* oculta cualquier contenido que desborde */
+    transition: transform 0.3s; /* añade una transición suave al transformar */
+    transform: translateY(-100%); /*coloca el menú fuera de la vista */
+    width: 100%;/*ancho de la barra de menu*/
+}
+
+.main-menu a:hover {/*estilo del menu al colocar el cursor en una seccion de la barra*/
+    color:saddlebrown; /* cambia el color del texto al pasar el cursor sobre el */
+    cursor: pointer; /* cambia el cursor para que indique que se puede navegar entre secciones */
+}
+
+.main-menu--show {/*lo que se desea hacer al menu*/
+    transform: translateY(0);/*transformar un elemento HTML mediante funciones*/
+}
+
+/*permite adatar a pantallas menores o iguales a 768*/
+@media screen and (min-width: 768px){
+    /*colocamos lo que queremos ajustar*/
+    .main-menu  {
+        flex-direction: row; /* en pantallas grandes organiza los elementos en fila*/
+        transform: translateY(0); /* muestra el menú en pantallas grandes*/
+        height: auto; /* ajusta la altura automáticamente */
+        overflow: visible;/*dibuja barras de desplazamiento*/
+    } 
+}
+    
+.main-menu__item {/*barra de elementos*/
+    padding: 1em; /* Añade relleno alrededor de cada elemento del menú */
+}
+
+.main-menu__link {
+    color: white; /*color del texto de la barra */
+    text-transform: uppercase; /*texto de las secciones en mayusculas*/
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+}
+
+img {/*diseño de las imagenes en general*/
+    max-width: 100%; /*maxima anchura de las imagenes dentro del contenedor */
+}
+
+.toggle-menu {/*diseño del menu de hamburguesa*/
+    width: 40px; /*ancho del botón*/
+    position: absolute; /*posicion completa dentro de contenedor*/
+    top: 0.5rem; /*espacio de la parte superior al boton*/
+    right: 1.5rem; /*borde izquiero*/
+    cursor: pointer; /* Cambia el cursor para indicar navegacion*/
+    filter: invert(1); /*invierte los colores de la imagen */
+    z-index: 1; /*indica el orden de un elemento posicionado*/
+    position: fixed; /*hace que un elemento se coloque respecto al viewport*/
+}
+
+.toggle-menu__checkbox {/*diseño de menu de hamburgues*/
+    display: none; /* Oculta el checkbox dependiendo del tamaño de pantalla */
+}
+
+.toggle-menu__checkbox:checked + .main-menu {/*diseño para mostrar el menu*/
+    transform: translateY(0); /*muestra el menú con ayuda del checkbox */
+    height: auto; /*altura automáticamente */
+}
+
+/*permite adatar a pantallas menores o iguales a 768*/
+@media screen and (min-width: 768px) {
+    /*adapta el boton de menu a pantalla*/
+    .toggle-menu {
+        display: none; /*oculta el botón del menú en pantallas grandes */
+    }
+}
+
+.bacgrounStyle{/*estilo de primera seccion*/
+    padding: 20px;/*espacio que rodea el contenido dentro de un elemento web*/
+    margin-top: 0px;/*margen superior*/
+    background-color: rgb(0, 0, 0);/*color de fondo*/
+    height: 600px;/*altura*/
+    background-image: url(../imges/cofeeee.avif);/*imagen de fondo de seccion*/
+/*determina si la posición de la imagen de fondo será fija dentro de la pantalla 
+o se desplazará con su bloque contenedor*/
+    background-attachment: fixed;
+    background-size: 100% 100%;/*ancho y alto para nuestras imágenes dento de pantalla*/
+}
+.container .bacgrounStyle p{/*estilo de parrafo*/
+    padding: 50px;/*espacio que rodea el contenido dentro de un elemento web*/
+    color: white;/*color de letra*/
+    height: 490px;/*altura*/
+    font-size: 25px;/*tamaño de letra*/
+    /*tipo de letra*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .bacgrounStyle h1{/*estilo del titulo de la seccion*/
+    font-size: 60px;/*tamaño de letra*/
+    color: #ffffff;/*color de letra*/
+}
+
+.bacgrounStyle1{/*estilo de segunda seccion*/
+    text-align: center;
+    padding: 20px;/*espacio que rodea el contenido dentro de un elemento web*/
+    margin-top: 0px;/*margen superior*/
+    background-color: black;/*color de fondo*/
+    height: 600px;/*altura*/
+    background-image: url(../imges/c3.jpg);/*imagen de fondo de seccion*/
+    /*determina si la posición de la imagen de fondo será fija dentro de 
+    la pantalla o se desplazará con su bloque contenedor*/
+    background-attachment: fixed;
+    background-size: 100% 100%;/*ancho y alto para nuestras imágenes dento de pantalla*/
+}
+.container .bacgrounStyle1 p{/*estilo de parrafo*/
+    padding: 50px;/*espacio que rodea el contenido dentro de un elemento web*/
+    color: white;/*color de letra*/
+    height: 490px;/*altura*/
+    font-size: 25px;/*tamaño de letra*/
+    /*tipo de letra*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .bacgrounStyle1 h1{/*estilo del titulo de la seccion*/
+    font-size: 60px;/*tamaño de letra*/
+    color: #ffffff;/*color de letra*/
+}
+
+.bacgrounStyle2{/*estilo de terceraseccion*/
+    text-align: center;
+    padding: 20px;/*espacio que rodea el contenido dentro de un elemento web*/
+    margin-top: 0px;/*margen superior*/
+    background-color: black;/*color de fondo*/
+    height: 600px;/*altura*/
+    background-image: url(../imges/c2.jpg);/*imagen de fondo de seccion*/
+/*determina si la posición de la imagen de fondo será fija dentro de 
+    la pantalla o se desplazará con su bloque contenedor*/
+    background-attachment: fixed;
+    background-size: 100% 100%;/*ancho y alto para nuestras imágenes dento de pantalla*/
+}
+.container .bacgrounStyle2 p{/*estilo de parrafo*/
+    padding: 50px;/*espacio que rodea el contenido dentro de un elemento web*/
+    color: white;/*color de letra*/
+    height: 490px;/*altura*/
+    font-size: 25px;/*tamaño de letra*/
+    /*tipo de letra*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .bacgrounStyle2 h1{/*estilo del titulo de la seccion*/
+    font-size: 60px;/*tamaño de letra*/
+    color: #ffffff;/*color de letra*/
+}
+
+.bacgrounStyle3{/*estilo de cuarta seccion*/
+    padding: 20px;/*espacio que rodea el contenido dentro de un elemento web*/
+    margin-top: 0px;/*margen superior*/
+    background-color: black;/*color de fondo*/
+    height: 600px;/*altura*/
+    background-image: url(../imges/cofee.jpg);/*imagen de fondo de seccion*/
+/*determina si la posición de la imagen de fondo será fija dentro de 
+    la pantalla o se desplazará con su bloque contenedor*/
+    background-attachment: fixed;
+    background-size: 100% 100%;/*ancho y alto para nuestras imágenes dento de pantalla*/ 
+}
+.container .bacgrounStyle3 p{/*estilo de parrafo*/
+    padding: 50px;/*espacio que rodea el contenido dentro de un elemento web*/
+    color: white;/*color de letra*/
+    height: 490px;/*altura*/
+    font-size: 25px;/*tamaño de letra*/
+    /*tipo de letra*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .bacgrounStyle3 h1{/*estilo del titulo de la seccion*/
+    font-size: 60px;/*tamaño de letra*/
+    color: #ffffff;/*color de letra*/
+}
+
+.bacgrounStyle4{/*estilo de quinta seccion*/
+    padding: 20px;/*espacio que rodea el contenido dentro de un elemento web*/
+    margin-top: 0px;/*margen superior*/
+    background-color: black;/*color de fondo*/
+    height: 600px;/*altura*/
+    background-image: url(../imges/cof.webp);/*imagen de fondo de seccion*/
+/*determina si la posición de la imagen de fondo será fija dentro de 
+    la pantalla o se desplazará con su bloque contenedor*/
+    background-attachment: fixed;
+    background-size: 100% 100%;/*ancho y alto para nuestras imágenes dento de pantalla*/
+}
+.container .bacgrounStyle4 p{/*estilo de parrafo*/
+    padding: 50px;/*espacio que rodea el contenido dentro de un elemento web*/
+    color: white;/*color de letra*/
+    height: 490px;/*altura*/
+    font-size: 25px;/*tamaño de letra*/
+    /*tipo de letra*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .bacgrounStyle4 h1{/*estilo del titulo de la seccion*/
+    font-size: 60px;/*tamaño de letra*/
+    color: #ffffff;/*color de letra*/
+}
+
+
+

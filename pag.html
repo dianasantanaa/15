@@ -1,0 +1,101 @@
+<!DOCTYPE html><!--informa al navegdor que version de HTML se ocupa-->
+<html lang="en"><!--se utiliza para comenzar a estructurar y el idioma-->
+<head><!--información general acerca del documento, incluyendo su título y
+    enlaces a scripts y hojas de estilos-->
+    <meta charset="UTF-8"><!--responsable de que se muestre el contenido correctamente y con caracteres-->
+    <!-- metaetiqueta mediante la que se establece si se puede hacer zoom en una página, el zoom inicial o 
+        la anchura de la pantalla del dispositivo-->
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Navigation</title></title><!--se encarga de dale titulo a la pestaña de la pagina-->
+    <link rel="icon" href="imges/ocnii.jpg"><!--agregamos un icono a la pestaña de la pagina-->
+    <link rel="stylesheet" href="css/style.css"><!--se enlaza una hoja de estilo-->
+    <!--agregamos el codigo de google font para el estilo de letra que deseamos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head><!--se cierra la parte de la informacion general-->
+
+<body> <!--se escribe el contenido que ira dentro de la pagina web-->
+    <nav class="main-nav"><!--sive para navegar entre la pagina-->
+        <div id="toggle-menu" class="toggle-menu"> <!--agreamos en comtenedor del menu-->
+            <label for="toggle-menu-checkbox"><!--utilizamos label para el texto que nos mostrara el menu-->
+<!--agregamos el icono que saldra deacuerdo a la resolucion de pantalla para que al hacer click muestre el menu de hamburguesa-->
+                <img src="imges/menu.jpg" alt="no se encontro la imagen"/>
+            </label><!--se termina el label-->
+        </div><!--colocamos el contenedor de las listas que nos permitiran navegar-->
+        <!--es un elemento que permite colocar la lista dentro para el contenedor de navegacion-->
+        <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox"/>
+        <!--colocamos la lista que nos permitira poner dentro los elemnetos de navegacion-->
+        <ul id="main-menu" class="main-menu">
+        <li class="main-menu__item"> <!--colocamos elemento de lista--> 
+            <!--se crea enlace interno en html-->
+            <a href="#home" class="main-menu__link">Inicio</a>
+        </li><!--se termina el elemento de la lista-->
+        <li class="main-menu__item"><!--se crea un elemento de lista-->
+            <!--se crea enlace interno en html-->
+            <a href="#contacto" class="main-menu__link">Contacto</a>
+        </li><!--se termina el elemento de la lista-->
+        <li class="main-menu__item">  <!--se crea un elemento de lista-->
+            <!--se crea enlace interno en html-->
+            <a href="#mision" class="main-menu__link">Mision</a>
+        </li><!--se termina el elemento de la lista-->
+        <li class="main-menu__item">  <!--se crea un elemento de lista-->
+            <!--se crea enlace interno en html-->
+            <a href="#vision" class="main-menu__link">Vision</a>
+        </li><!--se termina el elemento de la lista-->
+        <li class="main-menu__item">  <!--se crea un elemento de lista-->
+            <!--se crea enlace interno en html-->
+            <a href="#nosotros" class="main-menu__link">Sobre Nosotros</a>
+        </li><!--se termina el elemento de la lista-->
+        </ul><!--se termina la lista-->
+    </nav><!--se termina la barra de navegacion-->
+
+    <div class="container"> <!--contiene todas las secciones-->
+
+        <!--agregamos la primera seccion con su identificador y su clase-->
+        <div id="home" class="bacgrounStyle">
+            <h1>Bienvenidos a nuestra pagina web</h1><!--se agrega un titulo principal-->
+            <p><!--parrafo en la primera seccion-->
+                Este es un ejemplo para la pagina web, debemos de tener un parrafo muyyyyyy largo para que este se viasualice de una forma correcta
+               totam, delectus vitae saepe eius dolores dolorum animi fugit itaque tempore rem alias voluptatibus. Suscipit deserunt ad, repellendus deleniti fuga laborum.
+            </p><!--se termina el parrafo-->
+        </div><!--se termina la primera seccion-->
+
+        <!--agregamos la segunda seccion con su identificador y su clase-->
+        <div id="contacto" class="bacgrounStyle1">
+        <h1>INFORMACION DE CONTACTO</h1><!--se agrega un titulo principal-->
+        <p><!--parrafo en la primera seccion-->
+           En este espacio puedes colocar la informacion de la empresa por la cual te puedes contactar con la empresa 
+        </p><!--se termina el parrafo-->
+        </div><!--se termina la segunda seccion-->
+
+    <!--agregamos la tercera seccion con su identificador y su clase-->
+        <div id="mision" class="bacgrounStyle2">
+        <h1>LA MISION DE LA EMPRESA</h1><!--se agrega un titulo principal-->
+        <p><!--parrafo en la primera seccion-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae veritatis vero labore, temporibus nemo minus. Dolor iure laboriosam, exercitationem aliquid eum nisi. Asperiores ratione quidem reiciendis esse, beatae eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil porro molestiae culpa!
+             Laudantium odio asperiores vitae officiis reprehenderit, consectetur deleniti ratione temporibus harum vel sit voluptas voluptatibus vero autem!
+        </p> <!--se termina el parrafo-->
+        </div><!--se termina la tercera seccion-->
+
+        <!--agregamos la cuarta seccion con su identificador y su clase-->
+        <div id="vision" class="bacgrounStyle3">
+        <h1>LA VISION DE LA EMPRESA</h1><!--se agrega un titulo principal-->
+        <p><!--parrafo en la primera seccion-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae veritatis vero labore, temporibus nemo minus. Dolor iure laboriosam, exercitationem aliquid eum nisi. Asperiores ratione quidem reiciendis esse, beatae eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil porro molestiae culpa!
+             Laudantium odio asperiores vitae officiis reprehenderit, consectetur deleniti ratione temporibus harum vel sit voluptas voluptatibus vero autem!
+        </p><!--se termina el parrafo-->
+        </div><!--se termina la cuarta seccion-->
+
+        <!--agregamos la quinta seccion con su identificador y su clase-->
+        <div id="nosotros" class="bacgrounStyle4">
+    <h1>CONOCENOS</h1><!--se agrega un titulo principal-->
+    <p><!--parrafo en la primera seccion-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae veritatis vero labore, temporibus nemo minus. Dolor iure laboriosam, exercitationem aliquid eum nisi. Asperiores ratione quidem reiciendis esse, beatae eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nihil porro molestiae culpa!
+         Laudantium odio asperiores vitae officiis reprehenderit, consectetur deleniti ratione temporibus harum vel sit voluptas voluptatibus vero autem!
+    </p><!--se termina el parrafo-->
+        </div><!--se termina la primera seccion-->
+
+    </div><!--se termina el contenedor-->
+</body><!--se termina lo que ira dentro de la pagina web-->
+</html><!--fin de la estructura-->
